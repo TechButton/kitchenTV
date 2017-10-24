@@ -12,7 +12,7 @@ $aspect ="m169";
 
 // ##### Date / Timezone #####
 // You can safely disable my default timezone by adding // to the start of the line.
-date_default_timezone_set("Asia/Tokyo"); 
+date_default_timezone_set("America/Chicago"); 
 // You do not need to edit this unless you know what you are doing.
 $date= strtoupper(date("M jS l", time()));
 
@@ -20,11 +20,11 @@ $date= strtoupper(date("M jS l", time()));
 // see weather.js file
 // weather location - examples: "Manchester, England", "Paris, Texas", "Paris, France"
 // or check on Yahoo weather if you have trouble,
-$wloc="Nanjo-shi";
+$wloc="Rochester";
 // weather forecast days, MAX 9
 $wdays=4;
 // Temperature units; C or F
-$wunit = "C";
+$wunit = "F";
 
 // ##### IP Checker, 0=off 1=on #####
 $ipchecker=0;
@@ -45,10 +45,10 @@ $ip="153.189.6.28";
 // mus = 0 or 1. mus=0 channels will switch between each other, as will mus=1, but they wont cross over unless you manually click.
 // Its is designed to have MUSIC separate from other content. So you can put the Kitchen TV into music mode.
 
-// Sky News
+// Twit Live
 $streams[]=array(
     "name" => "SN",
-    "url" => "y60wDzZt8yg",
+    "url" => "lIZpQ5KkTI4",
     "time" => 1200,
     "mus" => 0
 );
@@ -101,14 +101,14 @@ $streams[]=array(
 // this works off <title> <description> & <link> so those elements must be present in the XML doc
 
 //$news_url="http://www.aljazeera.com/xml/rss/all.xml";
-$news_url="http://feeds.bbci.co.uk/news/rss.xml?edition=uk";
+//$news_url="http://feeds.bbci.co.uk/news/rss.xml?edition=uk";
 //$news_url="http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml";
-//$news_url="https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&output=rss";
+$news_url="https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&output=rss";
 //$news_url="http://www.techradar.com/rss";
 
 // ###### Weather Underground alerts ####
 // your local weather station page to extract alerts from
-$wupage="https://www.wunderground.com/q/zmw:90001.1.99999";
+$wupage="https://www.wunderground.com/q/zmw:55901.1.99999";
 // uncomment "wu_advisory" on index.php to start using
 
 
